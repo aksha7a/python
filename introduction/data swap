@@ -1,0 +1,7 @@
+a = 2
+b = 3
+t = a
+a = b
+b = t
+print( "After swaping")
+print("a = ", a, "b = ", b)
