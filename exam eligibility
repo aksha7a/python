@@ -1,0 +1,15 @@
+# accept input from the user
+total_days = int(input("Enter total number of working days: "))
+absent_days = int(input("Enter total number of absent days: "))
+# calculate days attended
+attended_days = total_days - absent_days
+# calculate attendance percentage
+attendance_percentage = (attended_days / total_days) * 100
+# display the percentage
+print("Attendance percentage: (attendance percentage)% ")
+#check eligibility
+if attendance_percentage < 75:
+    print("Student will NOT be allowed to sit for the exam")
+else:
+    print("Student will be able to sit for the exam")
+    
