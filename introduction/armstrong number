@@ -1,0 +1,12 @@
+n = int(input("Enter a number"))
+length = len(str(n))
+sum = 0
+temp = n 
+while n>0:
+    rem = n%10
+    sum = sum + rem**length
+    n = n//10
+if temp==sum:
+    print("the number is armstrong")
+else:
+    print("the number is not armstrong")
