@@ -1,0 +1,15 @@
+import random
+number_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+judge_number = random.choice(number_list)
+print("Welcome to the quiz")
+print("Here is the list of numbers:")
+print(number_list)
+guess = int(input("Guess the number the judge has chosen:"))
+if guess == judge_number:
+    print("Congratulations, you have guessed the number")
+elif guess > judge_number:
+    print("Oh no, your guess is too high")
+else:
+    print("oh no, you guess is too low")
+print(f"The judge's number was: {judge_number}")
+
